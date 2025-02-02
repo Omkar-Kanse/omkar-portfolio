@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Simple CSS for visibility */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #35495e;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+        header img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            background-color: #42b983;
+            padding: 1em;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 2em 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .skills-list, .projects-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li, .projects-list li {
+            margin: 10px 0;
+        }
+        .projects-list li strong {
+            display: block;
+        }
+        .skills-list li i {
+            margin-right: 10px;
+        }
+        .skills-list li, .projects-list li {
+            font-size: 18px;
+            padding: 0.5em;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #35495e;
+            color: white;
+        }
+        section#skills, section#projects, section#contact, section#about {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+           <img src="omkar-portfolio/profile.jpeg" alt="Omkar's Profile Picture" class="profile-img">
+            <h1>Omkar's Portfolio</h1>
+            <h3>ENTC Engineer | AWS Cloud Enthusiast</h3>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="showSection('about')">About</a></li>
+            <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="omkar-portfolio/cv.pdf" target="_blank">CV</a></li> <!-- Updated Link -->
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m Omkar Kanse, an ENTC Engineer with a strong passion for cloud computing, especially AWS. Over time, I’ve gained hands-on experience with AWS services like EC2, Lambda, RDS, S3, and many more, helping me build solid skills in cloud infrastructure design and management. I’ve also worked on hosting websites and developing cloud virtualization projects, which have given me a deeper understanding of deploying and scaling applications in the cloud. My goal is to become a DevOps engineer, and I’m always looking for new challenges to optimize systems, automate processes, and improve cloud environments. With a strong foundation in problem-solving, C++ and SQL, and my background in both software and hardware from my ENTC studies, I approach every project with creativity, technical expertise, and hands-on experience. I’m excited to keep learning and using new technologies to create scalable and efficient cloud solutions, which I believe will be highly beneficial to the cloud industry.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fas fa-cloud"></i> <strong>Cloud Computing (AWS):</strong> Proficient in leveraging AWS services such as EC2, S3, Load Balancing, AutoScaling, RDS, CloudWatch and more to develop and manage cloud-based applications.</li>
+                <li><i class="fas fa-terminal"></i> <strong>Linux OS:</strong> Comfortable with basic Linux commands for file handling, user management, and performing networking tasks.</li>
+                <li><i class="fas fa-server"></i> <strong>Web Server Management:</strong> Hands-on experience in configuring and managing web servers like Nginx and Apache. Deployed various websites, portfolios, and applications using these web servers.</li>
+                <li><i class="fas fa-code"></i> <strong>Programming (Python, C++):</strong> Strong in problem solving, data structures and algorithms (DSA), and object-oriented programming (OOP) in C++.</li>
+                <li><i class="fas fa-database"></i> <strong>Database Management (MySQL, SQL):</strong> Proficient in working with relational databases, optimizing queries, and handling data efficiently.</li>
+                <li><i class="fas fa-code-branch"></i> <strong>Version Control (Git/GitHub):</strong> Experienced in using Git and GitHub for version control and collaborating on projects.</li>
+                <li><i class="fas fa-microchip"></i> <strong>Microcontroller Programming:</strong> Familiar with microcontrollers (STM32, 8051, PIC, ESP32) and programming/uploading code to hardware.</li>
+                <li><i class="fas fa-cogs"></i> <strong>Electronic Components, Digital Electronics, and DSP:</strong> Knowledgeable in working with various electronic components, digital electronics concepts, and applying DSP techniques.</li>
+                <li><i class="fas fa-drafting-compass"></i> <strong>PCB Design:</strong> Hands-on experience designing and creating custom PCBs for embedded projects.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li>
+                    <strong>Smart Traffic Light Control System</strong>
+                    <p>I worked on creating a smart traffic light control system using YOLO algorithm for real-time vehicle detection, aiming to reduce congestion and improve traffic flow. [Jan 2024 - May 2024]</p>
+                </li>
+                <li>
+                    <strong>Guidance System for Blind People (Stick)</strong>
+                    <p>Developed a smart stick using PIC18F2550 microcontroller and ultrasonic sensors to help blind individuals detect obstacles around them. [Oct 2023 - Jan 2024]</p>
+                </li>
+                <li>
+                    <strong>Audio Transmission through Li-Fi</strong>
+                    <p>Transmitted audio signals using light through Li-Fi technology for faster and more secure communication than traditional Wi-Fi. [March 2023]</p>
+                </li>
+                <li>
+                    <strong>Scientific Calculator & Banking Management System</strong>
+                    <p>Built using C++ programming, these systems helped solidify problem-solving skills in algorithm design and implementation. [Dec 2022]</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p><i class="fas fa-envelope"></i> Email: omkarkanse2004@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Phone: 7385381551</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Omkar's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.style.display = "none"; // Hide all sections
+            });
+            document.getElementById(sectionId).style.display = "block"; // Show selected section
+        }
+    </script>
+
+</body>
+</html>
